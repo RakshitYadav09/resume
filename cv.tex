@@ -97,32 +97,6 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -142,12 +116,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Rakshit Yadav} \\[7.5pt]
+\href{https://github.com/RakshitYadav09}{\raisebox{-0.05\height}\faGithub\ RakshitYadav09} \ $|$ \ 
+\href{https://www.linkedin.com/in/rakshityadavv/}{\raisebox{-0.05\height}\faLinkedin\ rakshityadavv} \ $|$ \ 
+\href{https://www.behance.net/rezzfx}{\raisebox{-0.05\height}\faGlobe \ rezzfx} \ $|$ \ 
+\href{mailto:rakshityadav411@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ rakshityadav411@gmail.com} \ $|$ \ 
+\href{tel:9312354133}{\raisebox{-0.05\height}\faMobile \ 9312354133} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,27 +130,40 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+I'm an engineering student in SRM Institute of Science and Technology passionate about design and tech with proficiency in Figma and UI/UX designing, Python along with a keen interest in Data Science. Eager to contribute and innovate in the ever-evolving engineering landscape. \href{https://github.com/jitinnair1/autoCV}{click here}.
 
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Internship at Colt India Operations and Testing Department} & \hfill Dec 2023- Jan 2023\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Completed one-month internship at Colt Technology Services India Private Ltd, focusing on operations and testing. During this time, I gained valuable insights into operational processes and testing methodologies under the mentorship of an amazing and really helpful team.}  \\
+\end{tabularx}
 
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{UI-UX Associate at Next Tech Labs} & \hfill Oct 2023 - Present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Working on projects and hackathons with the team at \href{https://www.linkedin.com/company/next-tech-lab/mycompany/}{Next Tech Lab} SRMIST KTR under Norman Lab
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Property Price Predictor Project} & \hfill \href{https://github.com/RakshitYadav09/price-predictor}{Project Here} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed a real estate price prediction tool using Python. Employed machine learning techniques with Scikit-learn to train regression models and analyze property data wrangled with Pandas. This project demonstrates expertise in data manipulation and model building for real estate valuation.}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Indian Tourism Website Design} & \hfill \href{https://kzilla.xyz/tourism}{Project Here} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{A UI/UX project for an India Oriented Tourism Website which makes travel experience more accessible and attractive while making the process user friendly and streamlined.}  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{AI Image Colorizer} & \hfill \href{https://github.com/RakshitYadav09/Image-Colorizer}{Project Here} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{An AI Image colorizer which uses trained models to convert any B/W image to a colored image with high color accuracy in seconds.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -184,34 +171,30 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+2022 - present & BTech CSE at \textbf{SRM Institute Of Science And Technology} \hfill \normalsize (GPA: 8.14/10) \\
+2020-2022 & Maheshwari Public School \hfill   \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+2010-2020 & Amity International School \hfill \\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+
+\section{Certifications}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+Jul 2023 - Oct 2023 & Programming in Java NPTEL Course by  \textbf{IIT Kharagpur} \hfill \normalsize \\
+Jul 2023 - Oct 2023 & Computer Architecture NPTEL Course by \textbf{IIT Delhi}\hfill   \\
+
+Jan 2024 - Apr 2024 & Amity International School \hfill \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Figma, UI/UX, Power Bi, Python, MySQL, R, Data Visualization, Data Analysis, C++. Lightroom\\
+Video Editing (Sony Vegas Pro), HTML CSS 
 \end{tabularx}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+
 
 \end{document}
